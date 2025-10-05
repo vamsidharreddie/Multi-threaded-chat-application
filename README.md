@@ -27,7 +27,6 @@ MySQL Server: (The database server where messages will be stored).
 
 MySQL Connector (Simulated): The current database.py uses placeholders. In a real-world scenario, you would need to install a library like mysql-connector-python.
 
-Ensure this table  is created in database (chat_db)
 
 # Create the table required for message storage and history
 CREATE TABLE messages (
