@@ -31,9 +31,12 @@ MySQL Connector (Simulated): The current database.py uses placeholders. In a rea
 Step 1: File Structure
 Ensure you have the following three files in the same directory:
 
-/chat-project                                                                                                                                                                
+/chat-project   
+
 ├── server.py
+
 ├── client.py
+
 └── database.py
 
 Step 2: MySQL Database Setup (CRITICAL)
