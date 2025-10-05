@@ -27,27 +27,7 @@ MySQL Server: (The database server where messages will be stored).
 
 MySQL Connector (Simulated): The current database.py uses placeholders. In a real-world scenario, you would need to install a library like mysql-connector-python.
 
-⚙️ Setup and Installation
-Step 1: File Structure
-Ensure you have the following three files in the same directory:
-
-/chat-project   
-├── server.py
-├── client.py
-└── database.py
-
-Step 2: MySQL Database Setup (CRITICAL)
-The server requires a specific database structure to exist before it can run.
-
-Connect to your MySQL server using the command line or a client tool (e.g., MySQL Workbench).
-
-Create the Database and Table by executing the following SQL commands:
-
-# Create the database if it doesn't exist
-CREATE DATABASE IF NOT EXISTS chat_db;
-
-# Switch to the new database
-USE chat_db;
+Ensure this table  is created in database (chat_db)
 
 # Create the table required for message storage and history
 CREATE TABLE messages (
@@ -58,29 +38,6 @@ CREATE TABLE messages (
     timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
-Step 3: Run the Server
-Start the server first in a dedicated terminal window:
-
-python server.py
-
-The server will display status messages, including connection logs and database interaction logs.
-
-Step 4: Run the Client
-Open a new terminal window for each user you wish to connect:
-
-python client.py
-
-The client will prompt you for the following information in sequence:
-
-Nickname: (e.g., 'Alice', 'admin')
-
-Password: (chat@123 for regular users, admin123 for admin).
-
-Room ID: (e.g., 'general', 'test-room').
-
-⌨️ Usage and Commands
-Client Interaction
-Command
 
 Description
 
